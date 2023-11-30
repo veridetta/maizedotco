@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: rgb(208, 205, 205);
+}
+
+#time {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.outer {
+  background-color: #ecebf5d6;
+  backdrop-filter: blur(40px);
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  border-top: 7px solid #82CD47;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 12px;
+  padding: 20px; /* Jarak ditambahkan */
+  transition: 0.5s;
+}
+
+.outer span {
+  display: inline;
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.outer .content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Jarak ditambahkan */
+}
+
+.outer .column {
+  background: white;
+  width: 7rem;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px; /* Jarak ditambahkan */
+}
+
+.column select {
+  background: white;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+.outer #set {
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #000508;
+  background: none;
+  color: rgb(16, 4, 4);
+  width: 100%;
+  font-size: 25px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.outer #set:hover {
+  background-color: #82CD47;
+  color: white;
+}
+
+.outer:hover {
+  box-shadow: 0 0 50px #F0FF42;
+}
+
+.set-alarm-container {
+  width: 100%;
+  margin-top: 20px; /* Jarak ditambahkan */
+}
+
+.set-alarm-container-title {
+  margin: 10px 0;
+  font-weight: 500;
+  color: #000000;
+  font-size: larger;
+  font-weight: 600;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  box-shadow: 0 0 10px #505151;
+  background-color: rgb(243, 236, 236);
+  margin-bottom: 10px; /* Jarak ditambahkan */
+}
+
+.time {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.delete-alarm {
+  width: 6rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  color: #000508;
+  background-color: rgba(22, 9, 9, 0.112);
+  font-weight: 500;
+  font-size: xx-medium;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 1500px) {
+  .outer {
+      width: 40vw;
+  }
+
+  #time {
+      font-size: 2rem;
+  }
+
+  .column select {
+      font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .outer {
+      width: 60vw;
+  }
+
+  #time {
+      font-size: 2rem;
+  }
+
+  .column select {
+      font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .outer {
+      width: 100vw;
+  }
+
+  #time {
+      font-size: 2rem;
+  }
+
+  .column select {
+      font-size: 18px;
+  }
+}
